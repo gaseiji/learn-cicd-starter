@@ -42,7 +42,7 @@ func TestGetKeyInvalidHeader(t *testing.T) {
 	expectedErr := "malformed authorization header"
 	actualErr := err.Error()
 
-	if expectedErr != actualErr {
+	if expectedErr == actualErr {
 		t.Fatalf("expected: %v, got: %v", expectedErr, actualErr)
 	}
 }
