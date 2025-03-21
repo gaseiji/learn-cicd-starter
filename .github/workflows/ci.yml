@@ -28,4 +28,8 @@ jobs:
     steps:
       - name: formatting
         run: test -z $(go fmt ./...)
+
+      - name: Style Test
+        run: echo $?
+        
       
